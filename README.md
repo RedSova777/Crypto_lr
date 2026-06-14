@@ -262,29 +262,29 @@ python3 crypto.py --format json openssh.pk
 
 ```text
 Файл ключа
-    ↓
+    |
 load_openssh_private_key()
-    ↓
+    |
 bytes после Base64-декодирования
-    ↓
+    |
 parse_openssh_private_key()
-    ↓
+    |
 public_blob + private_blob
-    ↓
+    |
 parse_public_key_blob()
-    ↓
+    |
 public_part
-    ↓
+    |
 parse_private_blob()
-    ↓
+    |
 parse_private_rsa_body()
 или parse_private_ecdsa_body()
 или parse_private_ed25519_body()
-    ↓
+    |
 RsaPrivateParameters / EcdsaPrivateParameters / Ed25519PrivateParameters
-    ↓
+    |
 write_output()
-    ↓
+    |
 text или json
 ```
 
